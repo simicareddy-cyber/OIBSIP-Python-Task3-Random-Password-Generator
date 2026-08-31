@@ -1,147 +1,128 @@
-# 🧮 BMI Calculator — Python
+# 🔐 Random Password Generator — Python
 
-A simple **BMI (Body Mass Index) Calculator** developed using Python. This beginner-friendly project takes the user's name, height, and weight as input, calculates their BMI, and determines their BMI category.
+A simple and beginner-friendly **Random Password Generator** developed using Python. The program allows users to specify the password length and choose whether to include uppercase letters, numbers, and symbols.
 
 ## 📌 Project Overview
 
-The BMI Calculator is a command-line Python application that helps users calculate their Body Mass Index based on their height and weight.
+The Random Password Generator creates a random password based on the user's requirements.
 
-The program:
+The program allows the user to:
 
-* Takes the user's name as input.
-* Takes height in meters.
-* Takes weight in kilograms.
-* Calculates BMI using the standard formula.
-* Classifies the result into a BMI category.
-* Displays the user's details and calculated result.
+* Choose the password length.
+* Include or exclude uppercase letters.
+* Include or exclude numbers.
+* Include or exclude symbols.
+* Generate a random password automatically.
 
 ## 🎯 Objective
 
-The main objective of this project is to create a simple Python program that demonstrates:
+The main objective of this project is to create a Python program that demonstrates:
 
 * User input handling
-* Mathematical calculations
 * Conditional statements
-* Variables and data types
-* Formatted output
+* Loops
+* Random character selection
+* Python strings
 * Basic Python programming concepts
-
-## 🧮 BMI Formula
-
-The BMI is calculated using the following formula:
-
-**BMI = Weight (kg) / Height² (m²)**
-
-For example:
-
-```text
-Weight = 60 kg
-Height = 1.65 m
-
-BMI = 60 / (1.65 × 1.65)
-BMI ≈ 22.04
-```
-
-## 📊 BMI Categories
-
-| BMI Range    | Category      |
-| ------------ | ------------- |
-| Below 18.5   | Underweight   |
-| 18.5 – 24.9  | Normal Weight |
-| 25 – 29.9    | Overweight    |
-| 30 and above | Obesity       |
 
 ## 🛠️ Technologies Used
 
 * **Python 3**
 * **Google Colab / Jupyter Notebook**
+* `random` module
+* `string` module
 
-No external Python libraries are required.
+No external libraries need to be installed.
+
+## ⚙️ How It Works
+
+The program first creates a character set containing lowercase letters.
+
+Based on the user's choices, it adds:
+
+* **Uppercase letters:** `A-Z`
+* **Numbers:** `0-9`
+* **Symbols:** punctuation characters
+
+The program then randomly selects characters from the resulting character set until the requested password length is reached.
 
 ## ▶️ How to Run
 
 ### Using Google Colab
 
-1. Open Google Colab.
-2. Upload `task_1.ipynb`.
+1. Open **Google Colab**.
+2. Upload `task_2.ipynb`.
 3. Open the notebook.
 4. Run the code cell.
-5. Enter your:
-
-   * Name
-   * Height in meters
-   * Weight in kilograms
-6. The program will display your BMI and category.
+5. Enter the required password length.
+6. Select whether to include uppercase letters, numbers, and symbols.
+7. The generated password will be displayed.
 
 ### Using Python
 
-Save the code as:
-
-```text
-bmi_calculator.py
-```
-
-Then run:
+Run the notebook using Jupyter Notebook or convert the code into a Python file.
 
 ```bash
-python bmi_calculator.py
+python task_2.py
 ```
 
 ## 💻 Sample Input
 
 ```text
 ===================================
-          BMI CALCULATOR
+      RANDOM PASSWORD GENERATOR
 ===================================
 
-Enter your name: Rahul
-Enter your height in meters: 1.75
-Enter your weight in kilograms: 70
+Enter password length: 12
+Include uppercase letters? (yes/no): yes
+Include numbers? (yes/no): yes
+Include symbols? (yes/no): yes
 ```
 
 ## 📤 Sample Output
 
 ```text
 ===================================
-             RESULT
+          GENERATED PASSWORD
 ===================================
-Name: Rahul
-Height: 1.75 m
-Weight: 70.0 kg
-BMI: 22.86
-Category: Normal Weight
+
+aT7@qP2#xLm9
+
 ===================================
 ```
+
+> **Note:** The generated password will be different each time because the program selects characters randomly.
+
+## ✨ Features
+
+* 🔢 Custom password length
+* 🔠 Optional uppercase letters
+* 🔢 Optional numbers
+* 🔣 Optional symbols
+* 🎲 Random password generation
+* 💻 Simple command-line interface
+* 🚀 Easy to run in Google Colab
+* 📚 Beginner-friendly Python project
 
 ## 📁 Project Structure
 
 ```text
-/
+Random-Password-Generator/
 │
-├── task_1.ipynb
+├── task_2.ipynb
 └── README.md
 ```
 
-## 🌟 Features
-
-* Simple and beginner-friendly
-* Easy-to-use command-line interface
-* Fast BMI calculation
-* Automatic BMI classification
-* No external libraries required
-* Can be executed in Google Colab
-
-## 🚀 Future Enhancements
+## 🔮 Future Enhancements
 
 The project can be improved by adding:
 
-* Height input in centimeters and feet/inches
-* Weight input in pounds
-* Input validation
+* Password strength checking
+* Guaranteed inclusion of at least one character from each selected category
+* Copy-to-clipboard functionality
 * Graphical User Interface (GUI)
-* BMI history
-* Personalized health recommendations
-* Mobile or web-based interface
+* Password generation history
+* Secure password generation using Python's `secrets` module
 
 ## 👨‍💻 Author
 
@@ -150,3 +131,5 @@ The project can be improved by adding:
 ## 📄 License
 
 This project is created for educational and learning purposes.
+
+
